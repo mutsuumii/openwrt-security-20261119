@@ -1,0 +1,974 @@
+{
+  "source_repo": "openwrt/openwrt",
+  "source_url": "https://github.com/openwrt/openwrt",
+  "audit_date": "2026-11-19T09:58:59.130146",
+  "scanner_version": "1.3.0",
+  "findings_count": 120,
+  "severity_breakdown": {
+    "CRITICAL": 24,
+    "HIGH": 94,
+    "MEDIUM": 2
+  },
+  "findings": [
+    {
+      "id": "C-FMT-001",
+      "name": "Format string vulnerability",
+      "severity": "CRITICAL",
+      "cwe": "CWE-134",
+      "file": "target/linux/qualcommax/files/drivers/net/ethernet/qualcomm/qca_ppe_flow.c",
+      "line": 332
+    },
+    {
+      "id": "C-BOF-001",
+      "name": "Buffer overflow via unsafe string function",
+      "severity": "CRITICAL",
+      "cwe": "CWE-120",
+      "file": "package/network/services/ead/src/tinysrp/t_conv.c",
+      "line": 99
+    },
+    {
+      "id": "C-INT-001",
+      "name": "Integer overflow in size calculation",
+      "severity": "HIGH",
+      "cwe": "CWE-190",
+      "file": "package/network/services/ead/src/tinysrp/t_conv.c",
+      "line": 126
+    },
+    {
+      "id": "C-UAF-001",
+      "name": "Use-after-free pattern",
+      "severity": "HIGH",
+      "cwe": "CWE-416",
+      "file": "package/network/services/ead/src/tinysrp/t_conv.c",
+      "line": 168
+    },
+    {
+      "id": "C-NULLDEREF-001",
+      "name": "Missing NULL check after allocation",
+      "severity": "HIGH",
+      "cwe": "CWE-476",
+      "file": "package/network/services/ead/src/tinysrp/t_conv.c",
+      "line": 126
+    },
+    {
+      "id": "C-NULLDEREF-001",
+      "name": "Missing NULL check after allocation",
+      "severity": "HIGH",
+      "cwe": "CWE-476",
+      "file": "package/network/ipv6/map/src/mapcalc.c",
+      "line": 232
+    },
+    {
+      "id": "C-FMT-001",
+      "name": "Format string vulnerability",
+      "severity": "CRITICAL",
+      "cwe": "CWE-134",
+      "file": "package/network/services/ead/src/tinysrp/srvtest.c",
+      "line": 66
+    },
+    {
+      "id": "C-UAF-001",
+      "name": "Use-after-free pattern",
+      "severity": "HIGH",
+      "cwe": "CWE-416",
+      "file": "package/utils/jboot-tools/src/jboot_config_read.c",
+      "line": 276
+    },
+    {
+      "id": "C-UAF-001",
+      "name": "Use-after-free pattern",
+      "severity": "HIGH",
+      "cwe": "CWE-416",
+      "file": "package/utils/jboot-tools/src/jboot_config_read.c",
+      "line": 423
+    },
+    {
+      "id": "C-NULLDEREF-001",
+      "name": "Missing NULL check after allocation",
+      "severity": "HIGH",
+      "cwe": "CWE-476",
+      "file": "package/utils/jboot-tools/src/jboot_config_read.c",
+      "line": 262
+    },
+    {
+      "id": "C-BOF-001",
+      "name": "Buffer overflow via unsafe string function",
+      "severity": "CRITICAL",
+      "cwe": "CWE-120",
+      "file": "package/network/services/hostapd/src/src/ap/ucode.c",
+      "line": 245
+    },
+    {
+      "id": "C-BOF-001",
+      "name": "Buffer overflow via unsafe string function",
+      "severity": "CRITICAL",
+      "cwe": "CWE-120",
+      "file": "package/network/services/hostapd/src/src/ap/ucode.c",
+      "line": 1253
+    },
+    {
+      "id": "C-FMT-001",
+      "name": "Format string vulnerability",
+      "severity": "CRITICAL",
+      "cwe": "CWE-134",
+      "file": "package/network/services/hostapd/src/src/ap/ucode.c",
+      "line": 1496
+    },
+    {
+      "id": "C-UAF-001",
+      "name": "Use-after-free pattern",
+      "severity": "HIGH",
+      "cwe": "CWE-416",
+      "file": "package/network/services/hostapd/src/src/ap/ucode.c",
+      "line": 101
+    },
+    {
+      "id": "C-UAF-001",
+      "name": "Use-after-free pattern",
+      "severity": "HIGH",
+      "cwe": "CWE-416",
+      "file": "package/network/services/hostapd/src/src/ap/ucode.c",
+      "line": 200
+    },
+    {
+      "id": "C-UAF-001",
+      "name": "Use-after-free pattern",
+      "severity": "HIGH",
+      "cwe": "CWE-416",
+      "file": "package/network/services/hostapd/src/src/ap/ucode.c",
+      "line": 302
+    },
+    {
+      "id": "C-UAF-001",
+      "name": "Use-after-free pattern",
+      "severity": "HIGH",
+      "cwe": "CWE-416",
+      "file": "package/network/services/hostapd/src/src/ap/ucode.c",
+      "line": 409
+    },
+    {
+      "id": "C-UAF-001",
+      "name": "Use-after-free pattern",
+      "severity": "HIGH",
+      "cwe": "CWE-416",
+      "file": "package/network/services/hostapd/src/src/ap/ucode.c",
+      "line": 486
+    },
+    {
+      "id": "C-UAF-001",
+      "name": "Use-after-free pattern",
+      "severity": "HIGH",
+      "cwe": "CWE-416",
+      "file": "package/network/services/hostapd/src/src/ap/ucode.c",
+      "line": 597
+    },
+    {
+      "id": "C-UAF-001",
+      "name": "Use-after-free pattern",
+      "severity": "HIGH",
+      "cwe": "CWE-416",
+      "file": "package/network/services/hostapd/src/src/ap/ucode.c",
+      "line": 600
+    },
+    {
+      "id": "C-UAF-001",
+      "name": "Use-after-free pattern",
+      "severity": "HIGH",
+      "cwe": "CWE-416",
+      "file": "package/network/services/hostapd/src/src/ap/ucode.c",
+      "line": 651
+    },
+    {
+      "id": "C-UAF-001",
+      "name": "Use-after-free pattern",
+      "severity": "HIGH",
+      "cwe": "CWE-416",
+      "file": "package/network/services/hostapd/src/src/ap/ucode.c",
+      "line": 652
+    },
+    {
+      "id": "C-UAF-001",
+      "name": "Use-after-free pattern",
+      "severity": "HIGH",
+      "cwe": "CWE-416",
+      "file": "package/network/services/hostapd/src/src/ap/ucode.c",
+      "line": 1056
+    },
+    {
+      "id": "C-UAF-001",
+      "name": "Use-after-free pattern",
+      "severity": "HIGH",
+      "cwe": "CWE-416",
+      "file": "package/network/services/hostapd/src/src/ap/ucode.c",
+      "line": 1057
+    },
+    {
+      "id": "C-UAF-001",
+      "name": "Use-after-free pattern",
+      "severity": "HIGH",
+      "cwe": "CWE-416",
+      "file": "package/network/services/hostapd/src/src/ap/ucode.c",
+      "line": 1160
+    },
+    {
+      "id": "C-UAF-001",
+      "name": "Use-after-free pattern",
+      "severity": "HIGH",
+      "cwe": "CWE-416",
+      "file": "package/network/services/hostapd/src/src/ap/ucode.c",
+      "line": 1319
+    },
+    {
+      "id": "C-UAF-001",
+      "name": "Use-after-free pattern",
+      "severity": "HIGH",
+      "cwe": "CWE-416",
+      "file": "package/network/services/hostapd/src/src/ap/ucode.c",
+      "line": 1326
+    },
+    {
+      "id": "C-UAF-001",
+      "name": "Use-after-free pattern",
+      "severity": "HIGH",
+      "cwe": "CWE-416",
+      "file": "package/network/services/hostapd/src/src/ap/ucode.c",
+      "line": 1330
+    },
+    {
+      "id": "C-UAF-001",
+      "name": "Use-after-free pattern",
+      "severity": "HIGH",
+      "cwe": "CWE-416",
+      "file": "package/network/services/hostapd/src/src/ap/ucode.c",
+      "line": 1336
+    },
+    {
+      "id": "C-UAF-001",
+      "name": "Use-after-free pattern",
+      "severity": "HIGH",
+      "cwe": "CWE-416",
+      "file": "package/network/services/hostapd/src/src/ap/ucode.c",
+      "line": 1375
+    },
+    {
+      "id": "C-UAF-001",
+      "name": "Use-after-free pattern",
+      "severity": "HIGH",
+      "cwe": "CWE-416",
+      "file": "package/network/services/hostapd/src/src/ap/ucode.c",
+      "line": 1422
+    },
+    {
+      "id": "C-UAF-001",
+      "name": "Use-after-free pattern",
+      "severity": "HIGH",
+      "cwe": "CWE-416",
+      "file": "package/network/services/hostapd/src/src/ap/ucode.c",
+      "line": 1457
+    },
+    {
+      "id": "C-UAF-001",
+      "name": "Use-after-free pattern",
+      "severity": "HIGH",
+      "cwe": "CWE-416",
+      "file": "package/network/services/hostapd/src/src/ap/ucode.c",
+      "line": 1475
+    },
+    {
+      "id": "C-UAF-001",
+      "name": "Use-after-free pattern",
+      "severity": "HIGH",
+      "cwe": "CWE-416",
+      "file": "package/network/services/hostapd/src/src/ap/ucode.c",
+      "line": 1506
+    },
+    {
+      "id": "C-UAF-001",
+      "name": "Use-after-free pattern",
+      "severity": "HIGH",
+      "cwe": "CWE-416",
+      "file": "package/network/services/hostapd/src/src/ap/ucode.c",
+      "line": 1526
+    },
+    {
+      "id": "C-UAF-001",
+      "name": "Use-after-free pattern",
+      "severity": "HIGH",
+      "cwe": "CWE-416",
+      "file": "package/network/services/hostapd/src/src/ap/ucode.c",
+      "line": 1599
+    },
+    {
+      "id": "C-NULLDEREF-001",
+      "name": "Missing NULL check after allocation",
+      "severity": "HIGH",
+      "cwe": "CWE-476",
+      "file": "package/network/services/hostapd/src/src/ap/ucode.c",
+      "line": 99
+    },
+    {
+      "id": "C-NULLDEREF-001",
+      "name": "Missing NULL check after allocation",
+      "severity": "HIGH",
+      "cwe": "CWE-476",
+      "file": "package/network/services/hostapd/src/src/ap/ucode.c",
+      "line": 163
+    },
+    {
+      "id": "C-NULLDEREF-001",
+      "name": "Missing NULL check after allocation",
+      "severity": "HIGH",
+      "cwe": "CWE-476",
+      "file": "package/network/services/hostapd/src/src/ap/ucode.c",
+      "line": 619
+    },
+    {
+      "id": "C-NULLDEREF-001",
+      "name": "Missing NULL check after allocation",
+      "severity": "HIGH",
+      "cwe": "CWE-476",
+      "file": "package/network/services/hostapd/src/src/ap/ucode.c",
+      "line": 620
+    },
+    {
+      "id": "C-FMT-001",
+      "name": "Format string vulnerability",
+      "severity": "CRITICAL",
+      "cwe": "CWE-134",
+      "file": "target/linux/ramips/image/lzma-loader/src/loader.c",
+      "line": 228
+    },
+    {
+      "id": "C-FMT-001",
+      "name": "Format string vulnerability",
+      "severity": "CRITICAL",
+      "cwe": "CWE-134",
+      "file": "target/linux/ramips/image/lzma-loader/src/loader.c",
+      "line": 239
+    },
+    {
+      "id": "C-UAF-001",
+      "name": "Use-after-free pattern",
+      "severity": "HIGH",
+      "cwe": "CWE-416",
+      "file": "package/network/services/ead/src/libbridge_init.c",
+      "line": 82
+    },
+    {
+      "id": "C-UAF-001",
+      "name": "Use-after-free pattern",
+      "severity": "HIGH",
+      "cwe": "CWE-416",
+      "file": "package/network/services/ead/src/libbridge_init.c",
+      "line": 122
+    },
+    {
+      "id": "PY-PATH-001",
+      "name": "Path traversal via unsanitized input",
+      "severity": "HIGH",
+      "cwe": "CWE-22",
+      "file": "scripts/sercomm-partition-tag.py",
+      "line": 24
+    },
+    {
+      "id": "PY-PATH-001",
+      "name": "Path traversal via unsanitized input",
+      "severity": "HIGH",
+      "cwe": "CWE-22",
+      "file": "scripts/sercomm-partition-tag.py",
+      "line": 28
+    },
+    {
+      "id": "C-UAF-001",
+      "name": "Use-after-free pattern",
+      "severity": "HIGH",
+      "cwe": "CWE-416",
+      "file": "target/linux/qualcommax/files/drivers/net/ethernet/qualcomm/qca_ppe_acl.c",
+      "line": 874
+    },
+    {
+      "id": "C-UAF-001",
+      "name": "Use-after-free pattern",
+      "severity": "HIGH",
+      "cwe": "CWE-416",
+      "file": "target/linux/qualcommax/files/drivers/net/ethernet/qualcomm/qca_ppe_acl.c",
+      "line": 1288
+    },
+    {
+      "id": "C-UAF-001",
+      "name": "Use-after-free pattern",
+      "severity": "HIGH",
+      "cwe": "CWE-416",
+      "file": "target/linux/generic/files/drivers/net/phy/rtl8366rb.c",
+      "line": 1473
+    },
+    {
+      "id": "C-UAF-001",
+      "name": "Use-after-free pattern",
+      "severity": "HIGH",
+      "cwe": "CWE-416",
+      "file": "target/linux/generic/files/drivers/net/phy/rtl8366rb.c",
+      "line": 1485
+    },
+    {
+      "id": "C-FMT-001",
+      "name": "Format string vulnerability",
+      "severity": "CRITICAL",
+      "cwe": "CWE-134",
+      "file": "target/linux/realtek/image/rt-loader/src/board.c",
+      "line": 101
+    },
+    {
+      "id": "C-FMT-001",
+      "name": "Format string vulnerability",
+      "severity": "CRITICAL",
+      "cwe": "CWE-134",
+      "file": "target/linux/realtek/files-6.18/drivers/net/mdio/mdio-realtek-otto-serdes.c",
+      "line": 172
+    },
+    {
+      "id": "C-BOF-001",
+      "name": "Buffer overflow via unsafe string function",
+      "severity": "CRITICAL",
+      "cwe": "CWE-120",
+      "file": "package/network/services/hostapd/src/hostapd/radius.c",
+      "line": 511
+    },
+    {
+      "id": "C-UAF-001",
+      "name": "Use-after-free pattern",
+      "severity": "HIGH",
+      "cwe": "CWE-416",
+      "file": "package/network/services/hostapd/src/hostapd/radius.c",
+      "line": 128
+    },
+    {
+      "id": "C-UAF-001",
+      "name": "Use-after-free pattern",
+      "severity": "HIGH",
+      "cwe": "CWE-416",
+      "file": "package/network/services/hostapd/src/hostapd/radius.c",
+      "line": 517
+    },
+    {
+      "id": "C-STACK-001",
+      "name": "Large stack allocation (potential stack overflow)",
+      "severity": "MEDIUM",
+      "cwe": "CWE-770",
+      "file": "package/network/services/hostapd/src/hostapd/radius.c",
+      "line": 536
+    },
+    {
+      "id": "C-UAF-001",
+      "name": "Use-after-free pattern",
+      "severity": "HIGH",
+      "cwe": "CWE-416",
+      "file": "target/linux/generic/files/drivers/mtd/mtdsplit/mtdsplit_seil.c",
+      "line": 95
+    },
+    {
+      "id": "C-UAF-001",
+      "name": "Use-after-free pattern",
+      "severity": "HIGH",
+      "cwe": "CWE-416",
+      "file": "target/linux/generic/files/drivers/mtd/mtdsplit/mtdsplit_seil.c",
+      "line": 173
+    },
+    {
+      "id": "C-NULLDEREF-001",
+      "name": "Missing NULL check after allocation",
+      "severity": "HIGH",
+      "cwe": "CWE-476",
+      "file": "target/linux/generic/files/drivers/mtd/mtdsplit/mtdsplit_seil.c",
+      "line": 67
+    },
+    {
+      "id": "C-NULLDEREF-001",
+      "name": "Missing NULL check after allocation",
+      "severity": "HIGH",
+      "cwe": "CWE-476",
+      "file": "target/linux/generic/files/drivers/mtd/mtdsplit/mtdsplit_seil.c",
+      "line": 124
+    },
+    {
+      "id": "C-BOF-001",
+      "name": "Buffer overflow via unsafe string function",
+      "severity": "CRITICAL",
+      "cwe": "CWE-120",
+      "file": "package/utils/px5g-mbedtls/px5g-mbedtls.c",
+      "line": 400
+    },
+    {
+      "id": "C-NULLDEREF-001",
+      "name": "Missing NULL check after allocation",
+      "severity": "HIGH",
+      "cwe": "CWE-476",
+      "file": "package/utils/px5g-mbedtls/px5g-mbedtls.c",
+      "line": 265
+    },
+    {
+      "id": "C-NULLDEREF-001",
+      "name": "Missing NULL check after allocation",
+      "severity": "HIGH",
+      "cwe": "CWE-476",
+      "file": "package/utils/px5g-mbedtls/px5g-mbedtls.c",
+      "line": 290
+    },
+    {
+      "id": "C-NULLDEREF-001",
+      "name": "Missing NULL check after allocation",
+      "severity": "HIGH",
+      "cwe": "CWE-476",
+      "file": "package/utils/px5g-mbedtls/px5g-mbedtls.c",
+      "line": 318
+    },
+    {
+      "id": "C-NULLDEREF-001",
+      "name": "Missing NULL check after allocation",
+      "severity": "HIGH",
+      "cwe": "CWE-476",
+      "file": "package/utils/px5g-mbedtls/px5g-mbedtls.c",
+      "line": 329
+    },
+    {
+      "id": "C-STACK-001",
+      "name": "Large stack allocation (potential stack overflow)",
+      "severity": "MEDIUM",
+      "cwe": "CWE-770",
+      "file": "package/utils/px5g-mbedtls/px5g-mbedtls.c",
+      "line": 51
+    },
+    {
+      "id": "C-NULLDEREF-001",
+      "name": "Missing NULL check after allocation",
+      "severity": "HIGH",
+      "cwe": "CWE-476",
+      "file": "target/linux/generic/files/drivers/mtd/mtdsplit/mtdsplit_cfe_bootfs.c",
+      "line": 57
+    },
+    {
+      "id": "C-BOF-001",
+      "name": "Buffer overflow via unsafe string function",
+      "severity": "CRITICAL",
+      "cwe": "CWE-120",
+      "file": "scripts/mkhash.c",
+      "line": 695
+    },
+    {
+      "id": "C-UAF-001",
+      "name": "Use-after-free pattern",
+      "severity": "HIGH",
+      "cwe": "CWE-416",
+      "file": "target/linux/generic/files/drivers/net/phy/psb6970.c",
+      "line": 326
+    },
+    {
+      "id": "C-UAF-001",
+      "name": "Use-after-free pattern",
+      "severity": "HIGH",
+      "cwe": "CWE-416",
+      "file": "target/linux/generic/files/drivers/net/phy/psb6970.c",
+      "line": 349
+    },
+    {
+      "id": "C-UAF-001",
+      "name": "Use-after-free pattern",
+      "severity": "HIGH",
+      "cwe": "CWE-416",
+      "file": "target/linux/generic/files/drivers/net/phy/psb6970.c",
+      "line": 355
+    },
+    {
+      "id": "C-UAF-001",
+      "name": "Use-after-free pattern",
+      "severity": "HIGH",
+      "cwe": "CWE-416",
+      "file": "target/linux/generic/files/drivers/net/phy/psb6970.c",
+      "line": 395
+    },
+    {
+      "id": "C-BOF-001",
+      "name": "Buffer overflow via unsafe string function",
+      "severity": "CRITICAL",
+      "cwe": "CWE-120",
+      "file": "package/kernel/lantiq/ltq-ptm/src/ifxmips_ptm_ppe_common.h",
+      "line": 310
+    },
+    {
+      "id": "C-FMT-001",
+      "name": "Format string vulnerability",
+      "severity": "CRITICAL",
+      "cwe": "CWE-134",
+      "file": "package/kernel/lantiq/ltq-ptm/src/ifxmips_ptm_ppe_common.h",
+      "line": 310
+    },
+    {
+      "id": "C-BOF-001",
+      "name": "Buffer overflow via unsafe string function",
+      "severity": "CRITICAL",
+      "cwe": "CWE-120",
+      "file": "package/kernel/gpio-button-hotplug/src/gpio-button-hotplug.c",
+      "line": 130
+    },
+    {
+      "id": "C-FMT-001",
+      "name": "Format string vulnerability",
+      "severity": "CRITICAL",
+      "cwe": "CWE-134",
+      "file": "package/kernel/gpio-button-hotplug/src/gpio-button-hotplug.c",
+      "line": 121
+    },
+    {
+      "id": "C-UAF-001",
+      "name": "Use-after-free pattern",
+      "severity": "HIGH",
+      "cwe": "CWE-416",
+      "file": "package/kernel/gpio-button-hotplug/src/gpio-button-hotplug.c",
+      "line": 203
+    },
+    {
+      "id": "C-UAF-001",
+      "name": "Use-after-free pattern",
+      "severity": "HIGH",
+      "cwe": "CWE-416",
+      "file": "target/linux/qualcommax/files/drivers/net/ethernet/qualcomm/qca_ppe_flow_offload.c",
+      "line": 830
+    },
+    {
+      "id": "C-UAF-001",
+      "name": "Use-after-free pattern",
+      "severity": "HIGH",
+      "cwe": "CWE-416",
+      "file": "target/linux/qualcommax/files/drivers/net/ethernet/qualcomm/qca_ppe_flow_offload.c",
+      "line": 2818
+    },
+    {
+      "id": "C-UAF-001",
+      "name": "Use-after-free pattern",
+      "severity": "HIGH",
+      "cwe": "CWE-416",
+      "file": "target/linux/qualcommax/files/drivers/net/ethernet/qualcomm/qca_ppe_flow_offload.c",
+      "line": 2853
+    },
+    {
+      "id": "C-UAF-001",
+      "name": "Use-after-free pattern",
+      "severity": "HIGH",
+      "cwe": "CWE-416",
+      "file": "target/linux/qualcommax/files/drivers/net/ethernet/qualcomm/qca_ppe_flow_offload.c",
+      "line": 3048
+    },
+    {
+      "id": "C-UAF-001",
+      "name": "Use-after-free pattern",
+      "severity": "HIGH",
+      "cwe": "CWE-416",
+      "file": "target/linux/qualcommax/files/drivers/net/ethernet/qualcomm/qca_ppe_flow_offload.c",
+      "line": 3088
+    },
+    {
+      "id": "C-UAF-001",
+      "name": "Use-after-free pattern",
+      "severity": "HIGH",
+      "cwe": "CWE-416",
+      "file": "target/linux/qualcommax/files/drivers/net/ethernet/qualcomm/qca_ppe_flow_offload.c",
+      "line": 3096
+    },
+    {
+      "id": "C-UAF-001",
+      "name": "Use-after-free pattern",
+      "severity": "HIGH",
+      "cwe": "CWE-416",
+      "file": "target/linux/qualcommax/files/drivers/net/ethernet/qualcomm/qca_ppe_flow_offload.c",
+      "line": 3131
+    },
+    {
+      "id": "C-UAF-001",
+      "name": "Use-after-free pattern",
+      "severity": "HIGH",
+      "cwe": "CWE-416",
+      "file": "target/linux/siflower/files-6.18/drivers/spi/spi-sf21-qspi.c",
+      "line": 459
+    },
+    {
+      "id": "C-BOF-001",
+      "name": "Buffer overflow via unsafe string function",
+      "severity": "CRITICAL",
+      "cwe": "CWE-120",
+      "file": "scripts/config/symbol.c",
+      "line": 662
+    },
+    {
+      "id": "C-INT-001",
+      "name": "Integer overflow in size calculation",
+      "severity": "HIGH",
+      "cwe": "CWE-190",
+      "file": "scripts/config/symbol.c",
+      "line": 910
+    },
+    {
+      "id": "C-INT-001",
+      "name": "Integer overflow in size calculation",
+      "severity": "HIGH",
+      "cwe": "CWE-190",
+      "file": "scripts/config/symbol.c",
+      "line": 925
+    },
+    {
+      "id": "C-UAF-001",
+      "name": "Use-after-free pattern",
+      "severity": "HIGH",
+      "cwe": "CWE-416",
+      "file": "scripts/config/symbol.c",
+      "line": 933
+    },
+    {
+      "id": "C-UAF-001",
+      "name": "Use-after-free pattern",
+      "severity": "HIGH",
+      "cwe": "CWE-416",
+      "file": "scripts/config/symbol.c",
+      "line": 934
+    },
+    {
+      "id": "C-NULLDEREF-001",
+      "name": "Missing NULL check after allocation",
+      "severity": "HIGH",
+      "cwe": "CWE-476",
+      "file": "scripts/config/symbol.c",
+      "line": 654
+    },
+    {
+      "id": "C-NULLDEREF-001",
+      "name": "Missing NULL check after allocation",
+      "severity": "HIGH",
+      "cwe": "CWE-476",
+      "file": "scripts/config/symbol.c",
+      "line": 658
+    },
+    {
+      "id": "C-NULLDEREF-001",
+      "name": "Missing NULL check after allocation",
+      "severity": "HIGH",
+      "cwe": "CWE-476",
+      "file": "scripts/config/symbol.c",
+      "line": 807
+    },
+    {
+      "id": "C-NULLDEREF-001",
+      "name": "Missing NULL check after allocation",
+      "severity": "HIGH",
+      "cwe": "CWE-476",
+      "file": "scripts/config/symbol.c",
+      "line": 813
+    },
+    {
+      "id": "C-NULLDEREF-001",
+      "name": "Missing NULL check after allocation",
+      "severity": "HIGH",
+      "cwe": "CWE-476",
+      "file": "scripts/config/symbol.c",
+      "line": 910
+    },
+    {
+      "id": "C-NULLDEREF-001",
+      "name": "Missing NULL check after allocation",
+      "severity": "HIGH",
+      "cwe": "CWE-476",
+      "file": "scripts/config/symbol.c",
+      "line": 925
+    },
+    {
+      "id": "C-UAF-001",
+      "name": "Use-after-free pattern",
+      "severity": "HIGH",
+      "cwe": "CWE-416",
+      "file": "package/network/config/swconfig/src/uci.c",
+      "line": 240
+    },
+    {
+      "id": "C-NULLDEREF-001",
+      "name": "Missing NULL check after allocation",
+      "severity": "HIGH",
+      "cwe": "CWE-476",
+      "file": "package/network/config/swconfig/src/uci.c",
+      "line": 96
+    },
+    {
+      "id": "C-BOF-001",
+      "name": "Buffer overflow via unsafe string function",
+      "severity": "CRITICAL",
+      "cwe": "CWE-120",
+      "file": "package/network/services/ead/src/tinysrp/tphrase.c",
+      "line": 148
+    },
+    {
+      "id": "C-BOF-001",
+      "name": "Buffer overflow via unsafe string function",
+      "severity": "CRITICAL",
+      "cwe": "CWE-120",
+      "file": "package/network/services/ead/src/tinysrp/tphrase.c",
+      "line": 149
+    },
+    {
+      "id": "C-UAF-001",
+      "name": "Use-after-free pattern",
+      "severity": "HIGH",
+      "cwe": "CWE-416",
+      "file": "package/network/services/ead/src/tinysrp/tphrase.c",
+      "line": 144
+    },
+    {
+      "id": "C-UAF-001",
+      "name": "Use-after-free pattern",
+      "severity": "HIGH",
+      "cwe": "CWE-416",
+      "file": "package/network/services/ead/src/tinysrp/tphrase.c",
+      "line": 154
+    },
+    {
+      "id": "C-UAF-001",
+      "name": "Use-after-free pattern",
+      "severity": "HIGH",
+      "cwe": "CWE-416",
+      "file": "package/network/services/ead/src/tinysrp/tphrase.c",
+      "line": 155
+    },
+    {
+      "id": "C-UAF-001",
+      "name": "Use-after-free pattern",
+      "severity": "HIGH",
+      "cwe": "CWE-416",
+      "file": "package/network/services/ead/src/tinysrp/tphrase.c",
+      "line": 173
+    },
+    {
+      "id": "C-UAF-001",
+      "name": "Use-after-free pattern",
+      "severity": "HIGH",
+      "cwe": "CWE-416",
+      "file": "package/network/services/ead/src/tinysrp/tphrase.c",
+      "line": 174
+    },
+    {
+      "id": "C-UAF-001",
+      "name": "Use-after-free pattern",
+      "severity": "HIGH",
+      "cwe": "CWE-416",
+      "file": "package/network/services/ead/src/tinysrp/tphrase.c",
+      "line": 178
+    },
+    {
+      "id": "C-UAF-001",
+      "name": "Use-after-free pattern",
+      "severity": "HIGH",
+      "cwe": "CWE-416",
+      "file": "package/network/services/ead/src/tinysrp/tphrase.c",
+      "line": 179
+    },
+    {
+      "id": "C-UAF-001",
+      "name": "Use-after-free pattern",
+      "severity": "HIGH",
+      "cwe": "CWE-416",
+      "file": "package/network/services/ead/src/tinysrp/tphrase.c",
+      "line": 189
+    },
+    {
+      "id": "C-UAF-001",
+      "name": "Use-after-free pattern",
+      "severity": "HIGH",
+      "cwe": "CWE-416",
+      "file": "package/network/services/ead/src/tinysrp/tphrase.c",
+      "line": 190
+    },
+    {
+      "id": "C-BOF-001",
+      "name": "Buffer overflow via unsafe string function",
+      "severity": "CRITICAL",
+      "cwe": "CWE-120",
+      "file": "package/system/mtd/src/imagetag.c",
+      "line": 219
+    },
+    {
+      "id": "C-BOF-001",
+      "name": "Buffer overflow via unsafe string function",
+      "severity": "CRITICAL",
+      "cwe": "CWE-120",
+      "file": "package/system/mtd/src/imagetag.c",
+      "line": 367
+    },
+    {
+      "id": "C-INT-001",
+      "name": "Integer overflow in size calculation",
+      "severity": "HIGH",
+      "cwe": "CWE-190",
+      "file": "package/system/mtd/src/imagetag.c",
+      "line": 140
+    },
+    {
+      "id": "C-UAF-001",
+      "name": "Use-after-free pattern",
+      "severity": "HIGH",
+      "cwe": "CWE-416",
+      "file": "package/system/mtd/src/imagetag.c",
+      "line": 144
+    },
+    {
+      "id": "C-NULLDEREF-001",
+      "name": "Missing NULL check after allocation",
+      "severity": "HIGH",
+      "cwe": "CWE-476",
+      "file": "package/system/mtd/src/imagetag.c",
+      "line": 140
+    },
+    {
+      "id": "C-NULLDEREF-001",
+      "name": "Missing NULL check after allocation",
+      "severity": "HIGH",
+      "cwe": "CWE-476",
+      "file": "package/system/mtd/src/imagetag.c",
+      "line": 321
+    },
+    {
+      "id": "C-UAF-001",
+      "name": "Use-after-free pattern",
+      "severity": "HIGH",
+      "cwe": "CWE-416",
+      "file": "tools/padjffs2/src/padjffs2.c",
+      "line": 133
+    },
+    {
+      "id": "C-NULLDEREF-001",
+      "name": "Missing NULL check after allocation",
+      "severity": "HIGH",
+      "cwe": "CWE-476",
+      "file": "tools/padjffs2/src/padjffs2.c",
+      "line": 56
+    },
+    {
+      "id": "C-FMT-001",
+      "name": "Format string vulnerability",
+      "severity": "CRITICAL",
+      "cwe": "CWE-134",
+      "file": "scripts/config/nconf.c",
+      "line": 555
+    },
+    {
+      "id": "C-FMT-001",
+      "name": "Format string vulnerability",
+      "severity": "CRITICAL",
+      "cwe": "CWE-134",
+      "file": "scripts/config/nconf.c",
+      "line": 589
+    },
+    {
+      "id": "C-UAF-001",
+      "name": "Use-after-free pattern",
+      "severity": "HIGH",
+      "cwe": "CWE-416",
+      "file": "scripts/config/nconf.c",
+      "line": 806
+    }
+  ]
+}
